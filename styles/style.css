@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root { 
+     --main-color: #ffffff;
+     --sub-bg-color: #155478;
+     --main-text-color:#000000;
+     --subtitle-text-color:#888888;
+     --carousel-bg-color: #f4f4f4;
+     /* --main-font: font-family: 'Roboto Slab', serif; */
+    }
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+.width-conteiner {
+    max-width: 980px;
+    margin: auto;
+}
+
+.scheduale {
+    background-color: var(--sub-bg-color);
+}
+
+.scheduale a, .scheduale span {
+    color: var(--main-color);
+}
+
+.fas {
+    margin-right: 1em;
+}
+
+.home-text {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.nav-link, .regular-text{
+    font-size: 15px;
+    font-weight: 300px;
+}
+
+.top-baner {
+    background-image: url(../images/main-photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0 50px 15px;
+
+}
+.top-baner h1 {
+    font-size: 60px;
+    font-weight: 300;
+}
+.title-discription {
+    color: var(--subtitle-text-color);
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.main-baner {
+    margin-bottom: 70px;
+}
+
+.main-baner h1, .main-baner p{
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-size: 12px;
+}
+
+.activity-section {
+    margin-bottom: 70px;
+}
+.activity-photo {
+    width: 375px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.activity-description {
+    padding: 15px;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.benefits-section {
+    background-color: var(--sub-bg-color);
+    padding: 30px 15px 30px 15px;
+    margin-bottom: 70px;
+}
+
+.img-svg {
+    /* Не могу понять как перекрасит СВГ */
+    max-height: 100px;
+}
+
+.benefits-section h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--main-color);
+    margin: 30px;
+}
+
+.benefits-section .section-title {
+    color: var(--main-color);
+}
+
+.benefits-item, 
+.benefits-section h2 {
+    text-align: center;
+    margin: 30px;
+}
+@media (min-width: 850px) {
+
+.benefits-items-conteiner {
+    display: flex;
+    justify-content: space-around;
+}
+}
+
+.consultation-section {
+    background-color: var(--carousel-bg-color);
+    min-height: 400px;
+    padding-top: 20px;
+    margin-bottom: 70px;
+}
+
+.carousel-img {
+    width: 345px;
+    float: right;
+    margin-bottom: 15px;
+}
+
+.carousel-item {
+    padding: 15px;
+}
+
+.services-sectiom h2 {
+    text-align: center;
+}
+
+.services-card-conteiner {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.card {
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.feedback-section{
+    margin-top: 70px;
+    min-height: 400px;
+    padding-top: 50px;
+    margin-bottom: 70px;
+    background-color: var(--sub-bg-color);
+}
+
+.feedback-section p {
+    text-align: center;
+}
+
+.avatar {
+    height: 50px;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 15px;
+}
