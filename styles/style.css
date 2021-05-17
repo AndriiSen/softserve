@@ -86,6 +86,7 @@ body {
     font-size: 30px;
     font-weight: 400;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .clearfix {
@@ -159,7 +160,7 @@ body {
     padding: 10px;
 }
 
-.feedback-section{
+.feedback-section {
     margin-top: 70px;
     min-height: 400px;
     padding-top: 50px;
@@ -167,8 +168,12 @@ body {
     background-color: var(--sub-bg-color);
 }
 
-.feedback-section p {
+.feedback-section p,
+.feedback-section h2
+        {
     text-align: center;
+    color: var(--main-color);
+
 }
 
 .avatar {
@@ -176,4 +181,48 @@ body {
     border-radius: 50px;
     margin: auto;
     margin-bottom: 15px;
+}
+
+.care-products-sections {
+    margin-bottom: 70px;
+}
+
+.aplication-form-section {
+    background-image: url(../images/form-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 15px 30px 15px;   
+    margin-bottom: 70px;
+}
+
+.aplication-form-section input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.aplication-form-conteiner {
+    margin: auto;
+}
+.aplication-form {
+    min-width: 350px;
+    margin: auto;
+}
+
+.aplication-form-title {
+    max-width: 350px;
+    margin: auto;
+}
+
+
+@media (min-width: 600px) {
+.aplication-form-conteiner {
+    display: flex;
+    justify-content: space-between;
+
+}
+}
+
+.instagram-media {
+    max-height: 800px;
 }
