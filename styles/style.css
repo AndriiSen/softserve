@@ -231,6 +231,7 @@ body {
 
 /* Аккордеон */
 .accordion,
+.faq-section,
 .accordion-item,
 .accordion-item__trigger,
 .accordion-item__content {
