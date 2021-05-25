@@ -227,3 +227,47 @@ body {
 .instagram-media {
 	max-height: 800px;
 }
+
+
+/* Аккордеон */
+.accordion,
+.accordion-item,
+.accordion-item__trigger,
+.accordion-item__content {
+	background-color: var(--sub-bg-color);
+	color: var(--main-color);
+}
+.accordion {
+	padding: 40px;
+}
+.accordion-item {
+	margin-bottom: 20px;
+	border: none;
+}
+
+.accordion-item__trigger {
+	padding: 20px;
+}
+.accordion-item__content {
+	margin-top: 15px;
+	display: none;
+	border-top: none;
+}
+.trigger-conteiner {
+	display: flex;
+	justify-content: space-between;
+}
+.faq-cross {
+	/* transform: unset; */
+}
+.accordion-item--activated .accordion-item__content {
+	display: block;
+}
+
+@keyframes rotating {
+	0%   { transform: rotate(0deg); }
+	100% { transform: rotate(180deg); }
+}
+.accordion-item--activated .faq-cross {
+	animation: rotating 0.25s linear
+}
