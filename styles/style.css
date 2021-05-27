@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 :root {
 	--main-color: #ffffff;
-	--sub-bg-color: #155478;
+	--sub-bg-color: #cea6d8;
 	--main-text-color: #000000;
 	--subtitle-text-color: #888888;
 	--carousel-bg-color: #f4f4f4;
@@ -51,8 +51,11 @@ body {
 .top-baner h1 {
 	font-size: 60px;
 	font-weight: 300;
+	color: var(--main-color);
 }
-
+.top-baner .title-discription{
+	color: var(--main-color);
+}
 .title-discription {
 	color: var(--subtitle-text-color);
 	font-size: 17px;
@@ -61,6 +64,7 @@ body {
 
 .main-baner {
 	margin-bottom: 70px;
+	background-color: var(--sub-bg-color);
 }
 
 .main-baner h1,
@@ -145,6 +149,11 @@ body {
 	float: right;
 	margin-bottom: 15px;
 }
+.carousel, .lide, .carousel-fade {
+  max-width: 400px;
+  margin: auto;
+}
+
 
 .carousel-item {
 	padding: 15px;
@@ -239,7 +248,8 @@ body {
 	color: var(--main-color);
 }
 .accordion {
-	padding: 40px;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 .accordion-item {
 	margin-bottom: 20px;
@@ -271,4 +281,91 @@ body {
 }
 .accordion-item--activated .faq-cross {
 	animation: rotating 0.25s linear
+}
+
+
+.read-more-text {
+	display: none;
+}
+
+.read-more-active .read-more-text {
+	display: inline;
+}
+
+.faq-section {
+	margin-bottom: 100px;
+}
+
+.contuct-us-section {
+	background-image: url(../images/Contact-us-background.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.contuct-us-discription {
+	width: 50%;
+	margin-bottom: 20px;
+}
+.contuct-us-form {
+	width: 50%;
+}
+
+@media (max-width: 979px) {
+	.contuct-us-section .width-conteiner{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.contuct-us-form, .contuct-us-discription {
+		width: 80%;
+	}
+}
+
+.form-control {
+	margin-bottom: 15px;
+}
+
+.contuct {
+	margin-right: 15px;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.floatingInput {
+	font-size: 10px;
+}
+
+.footer {
+	background-color: var(--sub-bg-color);
+}
+
+.footer .navbar-nav {
+	text-align: center;
+	margin: 20px;
+}
+.footer .navbar-nav a {
+	text-decoration: none;
+	color: var(--main-color);
+}
+.footer,
+.footer .title-discription {
+	color: var(--main-color);
+
+}
+
+@media (max-width: 950px) {
+	.footer .width-conteiner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 20px
+	}
+}
+
+.insta-logo {
+	width: 70px;;
 }
